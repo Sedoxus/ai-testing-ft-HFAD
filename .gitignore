@@ -1,0 +1,42 @@
+# Dataset - don't upload images
+dataset/
+*.jpg
+*.jpeg
+*.png
+
+# Except sample images (if you create a samples folder)
+!samples/**/*.jpg
+!samples/**/*.png
+
+# Model files (these are large)
+*.h5
+best_model*.h5
+hand_gesture_final.h5
+
+# Training outputs
+confusion_matrix.png
+training_history.png
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
